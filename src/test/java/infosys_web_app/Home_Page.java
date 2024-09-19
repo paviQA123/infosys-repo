@@ -8,14 +8,12 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
+
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
+
 
 public class Home_Page {
 	
@@ -70,7 +68,7 @@ public class Home_Page {
 			driver.findElement(By.xpath("//span[.=\"Search\"]")).click();
 			
 		 System.out.println("pass1");
-		 Thread.sleep(3000);
+	
 		 
 		
 		
@@ -78,7 +76,7 @@ public class Home_Page {
 		 
 	   @AfterTest
 	    void closeApp() {
-		  ;
+		  
 	    	driver.quit();;
 	    }
 
